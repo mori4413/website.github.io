@@ -24,9 +24,25 @@
 <p>ゼミ生がみんなGitHub使えるようになるまで！</p>
 <h3>python</h3>
 <p>pythonの勉強も頑張っています。</p>
-<h4>Colabaratory</h4>
-<p>GitHubとColabratoryの連携でITに強くなりましょう</p>
-<py-script> print('Now you can!') </py-script>
+<h4>Python script .net</h4>
+<p>GitHubのwebsiteでpythonを動かしてみる</p>
+<py-script> 
+    print('Now you can!')
+import pandas as pd
+url='https://www.ous.ac.jp/outline/disclosure/basic/'
+dfs = pd.read_html(url)
+#取得した表等の数
+len(dfs)
+#取得した表等の数
+len(dfs)
+df=dfs[1]
+df.columns=(['役職','名前'])
+df
+df=df.iloc[:,[1,0]]
+df
+
+
+</py-script>
 </div>
 </div>
 <div id="right">
